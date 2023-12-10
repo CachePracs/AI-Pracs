@@ -1,0 +1,6 @@
+donessc(chax).
+donehsc(chax).
+hadmathshsc(chax).
+
+lbscitadmission(X):-((donessc(X),donehsc(X)),hadmathshsc(X)).
+rbscitadmission(X):-(donessc(X),(donehsc(X),hadmathshsc(X))).

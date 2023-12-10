@@ -1,0 +1,11 @@
+isMale(jash).
+isMale(chax).
+isMale(siddh).
+
+isDoctor(jash).
+isEngineer(chax).
+isEngineer(siddh).
+
+lgetMarried(X):-(isMale(X),(isDoctor(X);isEngineer(X))).
+rgetMarried(X):-((isMale(X),isDoctor(X));(isMale(X),isEngineer(X))).
+
